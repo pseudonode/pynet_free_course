@@ -1,0 +1,3 @@
+logging on
+logging console
+logging buffered 1530000
