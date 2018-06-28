@@ -1,0 +1,8 @@
+{%- if isakmp_enable %}}
+crypto isakmp policy 10
+ encr {{ encryption }}
+ authentication pre-share
+ group {{ dh_group }}
+crypto isakmp key my_key address 1.1.1.1 no-xauth
+crypto isakmp keepalive 10 periodic
+{%- endif %}
